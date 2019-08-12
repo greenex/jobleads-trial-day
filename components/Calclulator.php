@@ -14,7 +14,7 @@
       * @param $b
       * @return mixed
       */
-	public function plus ($a, $b){
+	public function plus($a, $b){
 		return  $a + $b;
 	}
 
@@ -37,7 +37,7 @@
       * @param $b
       * @return mixed
       */
-	public static function SubTract ($a, $b)
+	public static function SubTract($a, $b)
     {
 		return $a - $b;
 	}
