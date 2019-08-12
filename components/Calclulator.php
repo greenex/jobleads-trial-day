@@ -1,10 +1,12 @@
 <?php
  namespace app\components;
 
-
+ /**
+  * Class Calclulator
+  * @package app\components
+  */
  class Calclulator
  {
-
      /**
       * sum 2 values
       *
