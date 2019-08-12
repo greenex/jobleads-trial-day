@@ -8,10 +8,5 @@ $this->title = 'My Yii Application';
 
     <div class="jumbotron">
         <h1>Trail Day Tasks!</h1>
-
-
-
     </div>
-
-
 </div>
