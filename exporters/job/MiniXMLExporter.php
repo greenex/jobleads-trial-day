@@ -18,7 +18,10 @@ class MiniXMLExporter extends XMLExporter
         parent::__construct($query);
 
         foreach ($this->jobs as $key=>$job){
-            $this->jobs[$key]['description'] = substr( $this->jobs[$key]['description'], 0, 100).'...';
+            if(strlen($this->jobs[$key]['description']) > 100){
+                $this->jobs[$key]['description'] = substr( $this->jobs[$key]['description'], 0, 97).'...';
+            }
+
         }
     }
 }

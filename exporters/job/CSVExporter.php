@@ -29,7 +29,7 @@ class CSVExporter extends BaseExporter
         header("Content-Disposition: attachment; filename=".$filename);
         header("Content-type: text/csv");
         header("Content-Transfer-Encoding: binary");
-        $this>$this->save('php://output');
+        $this->save('php://output');
     }
 
 }

@@ -32,27 +32,5 @@ class JobsController extends \yii\web\Controller
         return $this->render('index',['formModel'=>$formModel]);
     }
 
-    public function actionDownloadCsv(){
-        $exporter = new CSVExporter(Job::find());
-        $exporter->download('jobs.csv');
-        exit;
-    }
-
-    public function actionDownloadXml()
-    {
-        $exporter = new XMLExporter(Job::find());
-        $exporter->download('jobs.xml');
-        exit;
-
-    }
-    public function actionDownloadMiniXml()
-    {
-        $exporter = new MiniXMLExporter(Job::find());
-        $exporter->download('jobs.xml');
-        exit;
-
-    }
-
-
 
 }

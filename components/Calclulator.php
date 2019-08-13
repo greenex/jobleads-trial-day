@@ -14,7 +14,8 @@
       * @param $b
       * @return mixed
       */
-	public function plus($a, $b){
+	public function plus($a, $b)
+    {
 		return  $a + $b;
 	}
 
@@ -39,7 +40,7 @@
       */
 	public static function SubTract($a, $b)
     {
-		return $a - $b;
+		return $a-$b;
 	}
 
      /**
@@ -54,14 +55,15 @@
     }
 
 	/**
-	 * Berechnet eine division:
+	 * division function
+     *
 	 * @param int $value Divisor
 	 * @param int $value2 Divident
 	 * @return double
 	 */
 	public static function Calculate($value, $value2)
 	{
-		return $value / $value2;
+		return $value/$value2;
 	}
 
      /**

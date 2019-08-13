@@ -33,8 +33,21 @@ class StudentsController extends Controller
      */
     public function actionAvg()
     {
+        $classesAvg =  (new StudentsRepository())->getCoursesAvg();
+        $overAllAvg = 0;
+
+        foreach ($classesAvg as $classAvg){
+            $overAllAvg+=$classAvg;
+        }
+        if(count($classesAvg)>0){
+            $overAllAvg = $overAllAvg/count($classesAvg);
+        }else{
+            $overAllAvg =0;
+        }
+
         return $this->render('avg', [
-            'result' => (new StudentsRepository())->getCoursesAvg(),
+            'result' => $classesAvg,
+            'overAllAvg'=>$overAllAvg
         ]);
     }
 }

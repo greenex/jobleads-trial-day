@@ -13,7 +13,7 @@ use yii\widgets\ActiveForm;
 
 <?php $form = ActiveForm::begin(); ?>
 
-<?= $form->field($formModel, 'format') ->dropDownList(['csv'=>'CSV','xml'=>'XML','xml-mini'=>'XML Mini Description'])?>
+<?= $form->field($formModel, 'format') ->dropDownList(['csv'=>'CSV','xml'=>'XML','mini-xml'=>'XML Mini Description'])?>
 <?= $form->field($formModel, 'email')->textInput(['maxlength' => true]) ?>
 
 <div class="form-group">

@@ -22,6 +22,18 @@ class m190812_105450_student_table extends Migration
             'class3_grade' => $this->float()->notNull()->defaultValue('0.0'),
         ]);
 
+        $this->createTable('classes', [
+            'id' => Schema::TYPE_PK,
+            'name' => $this->string()->notNull(),
+        ]);
+
+        $this->createTable('students_classes', [
+            'id' => Schema::TYPE_PK,
+            'student_id' => $this->integer(),
+            'class_id' => $this->integer(),
+            'grade' => $this->float()->notNull()->defaultValue('0.0'),
+        ]);
+
         $seeder     = new \tebazil\yii2seeder\Seeder();
         $generator  = $seeder->getGeneratorConfigurator();
         $faker      = $generator->getFakerConfigurator();

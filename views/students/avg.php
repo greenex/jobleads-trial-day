@@ -29,4 +29,4 @@
 </table>
 
 <h1>Overall AVG</h1>
-<h2><?= ($result['class1_avg']+$result['class2_avg']+$result['class3_avg'])/3 ?></h2>
+<h2><?= $overAllAvg ?></h2>
